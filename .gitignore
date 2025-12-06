@@ -1,0 +1,144 @@
+# Terraform - State Files
+# CRITICAL: Never commit state files (contains sensitive data and resource IDs)
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.tfstate.lock.info
+
+# Terraform - Directories
+.terraform/
+.terraform.lock.hcl
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Terraform - Variable Files
+# Exclude files that may contain secrets or sensitive configuration
+*.tfvars
+*.tfvars.json
+!example.tfvars
+!terraform.tfvars.example
+
+# Override files (used for local development)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform - CLI configuration files
+.terraformrc
+terraform.rc
+
+# AWS - Credentials and Config
+.aws/
+aws-credentials
+credentials
+*.pem
+*.key
+*.crt
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# IDE - JetBrains (IntelliJ, PyCharm, etc)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE - Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# IDE - Vim
+*.swp
+*.swo
+*~
+
+# OS - macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# OS - Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OS - Linux
+.Trash-*
+.nfs*
+
+# Logs
+*.log
+logs/
+/tmp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# SSH keys
+id_rsa
+id_rsa.pub
+*.ppk
+
+# GPG keys
+*.gpg
+secring.*
+
+# Documentation build artifacts
+site/
+_site/
+.sass-cache/
+
+# Python (if using Python scripts alongside Terraform)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+
+# Node.js (if using any Node tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore generated documentation
+docs/_build/
+*.pdf
+
+# Ignore test output
+test-results/
+coverage/
+
+# Specific to this project
+# Keep main.tfvars.example but ignore the actual one
+!main.tfvars.example

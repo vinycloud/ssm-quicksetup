@@ -1,0 +1,8 @@
+# Example Terraform Variables Configuration
+# Copy this file to main.tfvars and adjust the values as needed
+
+# Name of the SSM QuickSetup Configuration Manager
+name = "ssm-patch-policy-configuration"
+
+# Name of the Patch Policy
+patch_policy_name = "ssm-patch-policy-configuration"
